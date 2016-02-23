@@ -14,12 +14,19 @@ $(function() {
 	    },
 
 	    events: {
-	    	'click .delete': 'deleteBook'
+	    	'click .delete': 'deleteBook',
+	    	'click .edit': 'editBook'
 	    },
 
 	    deleteBook: function() {
 	    	this.model.destroy();
 	    	this.remove();
+	    },
+
+	    editBook: function() {
+	    	// call another function with the model info passed
+	    	var editView = new app.EditBook({model: this.model});
+	    	// editView.render();
 	    }
 	});
 })

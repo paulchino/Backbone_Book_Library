@@ -30,31 +30,33 @@ body {
     max-height: 80px;
 }
 
-#addBook label {
+#addBook label, #editBook label {
     width: 100px;
     margin-right: 10px;
     text-align: right;
     line-height: 25px;
 }
 
-#addBook label, #addBook input {
+#addBook label, #addBook input,
+#editBook label, #editBook input {
     display: block;
     margin-bottom: 10px;
     float: left;
 }
 
-#addBook label[for="title"], #addBook label[for="releaseDate"] {
+#addBook label[for="title"], #addBook label[for="releaseDate"],
+#editBook label[for="title"], #editBook label[for="releaseDate"] {
     clear: both;
 }
 
-#addBook button {
+#addBook button, #editBook button {
     display: block;
     margin: 5px 20px 10px 10px;
     float: right;
     clear: both;
 }
 
-#addBook div {
+#addBook div, #editBook div {
     width: 550px;
 }
 
@@ -66,4 +68,8 @@ body {
     clear: both;
     font-size: 0;
     line-height: 0;
+}
+
+#editBook {
+    clear: left;
 }
